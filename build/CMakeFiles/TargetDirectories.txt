@@ -1,0 +1,3 @@
+/home/jiangpengyu/SApaper/build/CMakeFiles/deque_project.dir
+/home/jiangpengyu/SApaper/build/CMakeFiles/edit_cache.dir
+/home/jiangpengyu/SApaper/build/CMakeFiles/rebuild_cache.dir
