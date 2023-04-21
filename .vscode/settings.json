@@ -1,0 +1,29 @@
+{
+    // code runner
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true, // run code前保存
+    "code-runner.clearPreviousOutput": true, // 每次run code前清空属于code runner的终端消息，默认false
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",//指定配置文件compelie_commands.json所在目录，这里有三种方法生成
+        // 在后台自动分析文件（基于complie_commands)
+        "--background-index",
+        // 同时开启的任务数量
+        "-j=12",
+        // "--folding-ranges"
+        // 告诉clangd用那个clang进行编译，路径参考which clang++的路径
+        "--query-driver=/usr/bin/clang++",
+        // clang-tidy功能
+        "--clang-tidy",
+        "--clang-tidy-checks=performance-*,bugprone-*",
+        // 全局补全（会自动补充头文件）
+        "--all-scopes-completion",
+        // 更详细的补全内容
+        "--completion-style=detailed",
+        "--function-arg-placeholders",
+        // 补充头文件的形式
+        "--header-insertion=iwyu",
+        // pch优化的位置
+        "--pch-storage=memory",
+    ],
+    "cmake.configureOnOpen": true,
+}
