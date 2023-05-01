@@ -1,29 +1,32 @@
-#include <cstdarg>
-#include <cstdio>
-#include<iostream>
-#include<queue>
-#include <utility>
+/*
+** EPITECH PROJECT, 2023
+** jiangpengyu
+** File description:
+** enter
+*/
+
+#include<cstdio>
 using namespace std;
 
-const int max=2e6+6;
 void single_deque(){
     int n, m;    
+    int left = 1;
+    int right = 0;
     scanf("%d %d", &n, &m);
-    deque<pair<int, int>> dq ;
-    for(int i = 0;i < n;i++){
-        int num = 0;
-        scanf("%d",&num);
-        if(dq.size() && dq.front().first < i-m){
-            dq.pop_front();
+    int a[20000];
+    int q[20000];
+    for(int i=1;i <= n;i++){
+        scanf("%d", &a[i]);
+    }
+    
+    for(int i=1;i <= n;i++){
+        printf("%d\n", a[q[left]]);
+        if(i-q[left]+1 > m && left <= right){
+            left++;
         }
-        if(dq.size()){
-            printf("%d\n" ,dq.front().second);
-        }else{
-            puts("0");
+        while(a[i] < a[q[right]] && left <= right){
+            right--;
         }
-        while (dq.size() && dq.back().second >= num) {
-            dq.pop_back();
-        }
-        dq.push_back({i,num});
+        q[++right] = i;
     }
 }
