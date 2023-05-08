@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/deque_project.dir/deque.cpp.o -o deque_project 
+/usr/bin/c++ CMakeFiles/deque_project.dir/deque.cpp.o CMakeFiles/deque_project.dir/get_many_number.cpp.o -o deque_project 

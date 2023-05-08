@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Main2.dir/get_many_number.cpp.o -o Main2 

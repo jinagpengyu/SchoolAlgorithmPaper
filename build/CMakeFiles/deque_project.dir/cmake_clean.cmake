@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/deque_project.dir/deque.cpp.o"
   "CMakeFiles/deque_project.dir/deque.cpp.o.d"
+  "CMakeFiles/deque_project.dir/get_many_number.cpp.o"
+  "CMakeFiles/deque_project.dir/get_many_number.cpp.o.d"
   "deque_project"
   "deque_project.pdb"
 )

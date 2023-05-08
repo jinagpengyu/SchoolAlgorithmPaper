@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/jiangpengyu/SApaper/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/main1.dir/deque.cpp.o -c /home/jiangpengyu/SApaper/deque.cpp",
+  "file": "/home/jiangpengyu/SApaper/deque.cpp"
+},
+{
+  "directory": "/home/jiangpengyu/SApaper/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/main2.dir/get_many_number.cpp.o -c /home/jiangpengyu/SApaper/get_many_number.cpp",
+  "file": "/home/jiangpengyu/SApaper/get_many_number.cpp"
+},
+{
+  "directory": "/home/jiangpengyu/SApaper/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/main3.dir/exh_sort.cpp.o -c /home/jiangpengyu/SApaper/exh_sort.cpp",
+  "file": "/home/jiangpengyu/SApaper/exh_sort.cpp"
+}
+]

@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/jiangpengyu/SApaper/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/deque_project.dir/all
+all: CMakeFiles/main1.dir/all
+all: CMakeFiles/main2.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/deque_project.dir/clean
+clean: CMakeFiles/main1.dir/clean
+clean: CMakeFiles/main2.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/deque_project.dir
+# Target rules for target CMakeFiles/main1.dir
 
 # All Build rule for target.
-CMakeFiles/deque_project.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/deque_project.dir/build.make CMakeFiles/deque_project.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/deque_project.dir/build.make CMakeFiles/deque_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiangpengyu/SApaper/build/CMakeFiles --progress-num=1,2 "Built target deque_project"
-.PHONY : CMakeFiles/deque_project.dir/all
+CMakeFiles/main1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiangpengyu/SApaper/build/CMakeFiles --progress-num=1,2 "Built target main1"
+.PHONY : CMakeFiles/main1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/deque_project.dir/rule: cmake_check_build_system
+CMakeFiles/main1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiangpengyu/SApaper/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/deque_project.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiangpengyu/SApaper/build/CMakeFiles 0
-.PHONY : CMakeFiles/deque_project.dir/rule
+.PHONY : CMakeFiles/main1.dir/rule
 
 # Convenience name for target.
-deque_project: CMakeFiles/deque_project.dir/rule
-.PHONY : deque_project
+main1: CMakeFiles/main1.dir/rule
+.PHONY : main1
 
 # clean rule for target.
-CMakeFiles/deque_project.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/deque_project.dir/build.make CMakeFiles/deque_project.dir/clean
-.PHONY : CMakeFiles/deque_project.dir/clean
+CMakeFiles/main1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/clean
+.PHONY : CMakeFiles/main1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main2.dir
+
+# All Build rule for target.
+CMakeFiles/main2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiangpengyu/SApaper/build/CMakeFiles --progress-num=3,4 "Built target main2"
+.PHONY : CMakeFiles/main2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiangpengyu/SApaper/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiangpengyu/SApaper/build/CMakeFiles 0
+.PHONY : CMakeFiles/main2.dir/rule
+
+# Convenience name for target.
+main2: CMakeFiles/main2.dir/rule
+.PHONY : main2
+
+# clean rule for target.
+CMakeFiles/main2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/clean
+.PHONY : CMakeFiles/main2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -7,14 +7,10 @@
 
 #include<cstdio>
 using namespace std;
-
+int n, m,left=1, right=0, a[200000], q[200000];
 void single_deque(){
-    int n, m;    
-    int left = 1;
-    int right = 0;
     scanf("%d %d", &n, &m);
-    int a[20000];
-    int q[20000];
+
     for(int i=1;i <= n;i++){
         scanf("%d", &a[i]);
     }

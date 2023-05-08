@@ -117,24 +117,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named deque_project
+# Target rules for targets named main1
 
 # Build rule for target.
-deque_project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deque_project
-.PHONY : deque_project
+main1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main1
+.PHONY : main1
 
 # fast build rule for target.
-deque_project/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/deque_project.dir/build.make CMakeFiles/deque_project.dir/build
-.PHONY : deque_project/fast
+main1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/build
+.PHONY : main1/fast
+
+#=============================================================================
+# Target rules for targets named main2
+
+# Build rule for target.
+main2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main2
+.PHONY : main2
+
+# fast build rule for target.
+main2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
+.PHONY : main2/fast
 
 deque.o: deque.cpp.o
 .PHONY : deque.o
 
 # target to build an object file
 deque.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/deque_project.dir/build.make CMakeFiles/deque_project.dir/deque.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/deque.cpp.o
 .PHONY : deque.cpp.o
 
 deque.i: deque.cpp.i
@@ -142,7 +155,7 @@ deque.i: deque.cpp.i
 
 # target to preprocess a source file
 deque.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/deque_project.dir/build.make CMakeFiles/deque_project.dir/deque.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/deque.cpp.i
 .PHONY : deque.cpp.i
 
 deque.s: deque.cpp.s
@@ -150,8 +163,32 @@ deque.s: deque.cpp.s
 
 # target to generate assembly for a file
 deque.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/deque_project.dir/build.make CMakeFiles/deque_project.dir/deque.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/deque.cpp.s
 .PHONY : deque.cpp.s
+
+get_many_number.o: get_many_number.cpp.o
+.PHONY : get_many_number.o
+
+# target to build an object file
+get_many_number.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/get_many_number.cpp.o
+.PHONY : get_many_number.cpp.o
+
+get_many_number.i: get_many_number.cpp.i
+.PHONY : get_many_number.i
+
+# target to preprocess a source file
+get_many_number.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/get_many_number.cpp.i
+.PHONY : get_many_number.cpp.i
+
+get_many_number.s: get_many_number.cpp.s
+.PHONY : get_many_number.s
+
+# target to generate assembly for a file
+get_many_number.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/get_many_number.cpp.s
+.PHONY : get_many_number.cpp.s
 
 # Help Target
 help:
@@ -161,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... deque_project"
+	@echo "... main1"
+	@echo "... main2"
 	@echo "... deque.o"
 	@echo "... deque.i"
 	@echo "... deque.s"
+	@echo "... get_many_number.o"
+	@echo "... get_many_number.i"
+	@echo "... get_many_number.s"
 .PHONY : help
 
 
